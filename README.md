@@ -1,4 +1,4 @@
-# Schedule-Card-Creator
+# Schedule Card Creator
 
 The Schedule Card Creator is an application that allows the user to create, save, and export a weekly schedule image that can be posted outside an office door or dropped into a web page or a CMS such as Canvas.
 
