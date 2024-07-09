@@ -22,3 +22,9 @@ To run this program from the source code:
 - Run the following command from your terminal,
 
 `python ScheduleCardCreator.py` or possibly  `python3 ScheduleCardCreator.py`
+
+---
+
+**Screenshot**
+
+![Screenshot of program.](/Version_2_3_1/ScheduleCardCreatorPython.png)
