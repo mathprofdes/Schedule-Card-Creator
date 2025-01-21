@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Constructing and Editing a Schedule &#8212; Schedule Card Creator 2.4.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=f6a572b4" />
+    <script src="_static/documentation_options.js?v=e9ebdb8f"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Layout Options" href="layoutops.html" />
+    <link rel="prev" title="Schedule Card Creator User’s Guide" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Schedule Card Creator</a></h1>
+
+
+
+<p class="blurb">The Schedule Card Creator is an application that allows the user to create, save, and export a weekly schedule image.</p>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Constructing and Editing a Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layoutops.html">Layout Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fileops.html">File &amp; Exporting Options</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Schedule Card Creator User’s Guide</a></li>
+      <li>Next: <a href="layoutops.html" title="next chapter">Layout Options</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="constructing-and-editing-a-schedule">
+<h1>Constructing and Editing a Schedule<a class="headerlink" href="#constructing-and-editing-a-schedule" title="Link to this heading">¶</a></h1>
+<p>The schedule card is populated by adding schedule items to the list. Select Edit &gt; Add New Schedule Item to create a new schedule item for the card. You can also use the toolbar button for this or Ctrl+A. When this is selected the following dialog box will appear for you to input a new item.</p>
+<img alt="_images/AddItemDialog.png" src="_images/AddItemDialog.png" />
+<ul class="simple">
+<li><p>The style category is a simple drop-down selection of 1-10. This designates the style options that are used for the item.</p></li>
+<li><p>The item text is free form text that will be displayed in the schedule. You may use as many lines as you would like. Note that text is not wrapped inside the schedule item. The fonts are resized so that the given text fits the available space. Hence you do not want the lines to be too long nor do you want a lot of lines for a time slot that is not very long.</p></li>
+<li><p>The days of the week are check boxes for the days this event is happening. The schedule card will display Monday to Friday unless an event is scheduled for Saturday or Sunday and then these days will be added to the schedule card.</p></li>
+<li><p>The start and end times are when the event starts and ends. These are to be input using a 24 hour clock. The display will be using a 12 hour clock.</p></li>
+</ul>
+<p>Once the data is entered and OK has been selected, the new item will be added to the schedule. It will appear in the schedule item list at the bottom and appear in the schedule image. Note that in the schedule list all schedule items are on a single line and the line breaks are given by //. Also, a schedule item that is not within the starting or ending times will either be partially displayed or not displayed at all. The starting or ending times are not altered by the schedule item times.</p>
+<p>To edit an item that is already entered you can double-click (or Ctrl+Click) the event in the schedule image. You will note that when you hover over the event it becomes “highlighted” with a cross-hatch pattern. You can also double-click the item in the listing at the bottom, hitting the enter key or selecting to edit from the menu or toolbar, with the item selected will also open the editor dialog. The editor dialog is the same as for adding a new item.</p>
+<img alt="_images/EditItemDialog.png" src="_images/EditItemDialog.png" />
+<p>In addition to adding and editing items you can clone an item by selecting Edit &gt; Clone Schedule Item from the menu or clicking the clone tool in the toolbar. This will create a copy of the selected item and then you can edit one of the clones with other settings. You can delete a schedule item by selecting it in the schedule item list and either hitting the delete key or selecting Edit &gt; Delete Schedule Item from the menu. You can also remove the entire schedule by selecting Edit &gt; Delete Schedule from the main menu.</p>
+<p>Items that overlap in times will show up as red in the schedule item list. These should be edited so that there is no time overlap, or else the image of the schedule may be unpredictable. The program also offers standard undo and redo options to undo unwanted edits. The undo and redo history stores only the schedule items and not the options, these are kept separate by design.</p>
+<p>The other input is for the header area. On the left in the options window there is a Header section. Two turn the header on and off simply double click the Include item under Header. You can put in a left, center, and right single line of text. As with the schedule items you will want to keep these short. To add in text to any of these sections double-click the Left Text, Center Text, or Right Text options below the Header title. A small dialog box will appear for you to add or edit the text in those sections. We will discuss the other layout options in a separate section of this help system. Once you are finished entering the items (and adjusting the options to your liking) your screen will look like the following. At this point you are ready to save and/or print the card.</p>
+<img alt="_images/ScheduleCardCreatorPython.png" src="_images/ScheduleCardCreatorPython.png" />
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="index.html" title="Previous document">Schedule Card Creator User’s Guide</a>
+        </li>
+        <li>
+          <a href="layoutops.html" title="Next document">Layout Options</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &#169;2025, Don Spickler.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/costsch.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/mathprofdes/Schedule-Card-Creator" class="github">
+        <img src="_static/github-banner.svg" alt="Fork me on GitHub" class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

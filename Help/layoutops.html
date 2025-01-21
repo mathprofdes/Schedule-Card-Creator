@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Layout Options &#8212; Schedule Card Creator 2.4.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=f6a572b4" />
+    <script src="_static/documentation_options.js?v=e9ebdb8f"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="File &amp; Exporting Options" href="fileops.html" />
+    <link rel="prev" title="Constructing and Editing a Schedule" href="costsch.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Schedule Card Creator</a></h1>
+
+
+
+<p class="blurb">The Schedule Card Creator is an application that allows the user to create, save, and export a weekly schedule image.</p>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="costsch.html">Constructing and Editing a Schedule</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Layout Options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#days-times">Days &amp; Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hour-divisions">Hour Divisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#printing">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#heading">Heading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#styles">Styles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fileops.html">File &amp; Exporting Options</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="costsch.html" title="previous chapter">Constructing and Editing a Schedule</a></li>
+      <li>Next: <a href="fileops.html" title="next chapter">File &amp; Exporting Options</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="layout-options">
+<h1>Layout Options<a class="headerlink" href="#layout-options" title="Link to this heading">¶</a></h1>
+<p>The window at the left displays the layout options for the program. At the top are some general layout options and below those are the options for each of the ten styles for the schedule items. To change any of the options simply double-click on the option. In some cases, like fonts and colors, a dialog box will appear allowing you to input your preferences. In other cases the program will either toggle the selection on and off or cycle through the options.</p>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p><strong>Time Range:</strong> This sets the starting and ending times of the schedule card. These are not altered by the times of the schedule items and schedule items that are outside this range may be clipped or not show at all.</p></li>
+<li><p><strong>Background Color:</strong> This is the color of the background in the schedule item area. This color is not used in the days and times area or the header area.</p></li>
+<li><p><strong>Outline Color:</strong> This is the color used for the outline of the card as well as the outline for each schedule item and the divisions between the days and times.</p></li>
+<li><p><strong>Font Auto-Resize:</strong> This is the mode used for automatically resizing the fonts. There are three modes: Global, Fixed, and Off.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In Global mode the program will automatically select the font size of all the fonts on the schedule to best fit their available space without overlapping into the other schedule items. This is the default mode of the program and really what it was designed to do. The automatic font resizer will start at the minimum font size from the options and increase the font size until the largest font possible still fits in all available spaces.</p></li>
+<li><p>In Fixed mode the font size that is used is the minimum font size from the options.</p></li>
+<li><p>When the resizing is turned off the program will use the font sizes from each of the font options selected by the user.</p></li>
+</ul>
+<p>Note that when printing the Global mode is used no matter what this option is set to. Due to the differences in font metrics of graphical fonts between screen and printer devices the Global setting will produce the most consistent results when printing. In addition, if an item is off the schedule image, it was given times that were outside the time range, it will still be used in the calculations of the font size when in global resizing mode.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Minimum Font Size:</strong> This is the smallest the font size will go in Global mode and is exactly the font size used in Fixed mode. If the text is too large for its available space at this size it will enter other schedule items and either overwrite or be clipped. It is good to keep this value set low but not too low.</p></li>
+<li><p><strong>Resize Adjustment:</strong> This is the point size decrease imposed on the global font size selection. Since the program, in Global mode, will set the font size to the largest possible font it may appear too large for some users. Setting this option will decrease the font size by the given number of points, with a minimum set to the given minimum. This option can stay at 0 (no adjustment, use optimal size) but if you wish to fine-tune the font size you can use this.</p></li>
+</ul>
+</section>
+<section id="days-times">
+<h2>Days &amp; Times<a class="headerlink" href="#days-times" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Background Color:</strong> This is the color of the background in the days and times area.</p></li>
+<li><p><strong>Text Color:</strong> This is the color used for the text of the days and times.</p></li>
+<li><p><strong>Font:</strong> This is the font used for the days and times. Depending on the resize mode being used the font size may be altered.</p></li>
+</ul>
+</section>
+<section id="hour-divisions">
+<h2>Hour Divisions<a class="headerlink" href="#hour-divisions" title="Link to this heading">¶</a></h2>
+<p>The hour divisions are horizontal lines at each hour that go across the schedule item area. This may make it easier for the reader to see when each item starts and ends.</p>
+<ul class="simple">
+<li><p><strong>Include:</strong> Turn the divisions on and off.</p></li>
+<li><p><strong>Color:</strong> The color used for the divisions.</p></li>
+</ul>
+</section>
+<section id="printing">
+<h2>Printing<a class="headerlink" href="#printing" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p><strong>Dimensions:</strong> This is the width and height in inches of the printed schedule card.</p></li>
+<li><p><strong>Offset:</strong> This is the horizontal and vertical offset in inches of the upper left corner of the printed schedule card. Since most printers have a printing area less than the area of the page you will want this between 0.5 and 1 inch so that the printer does not clip the image.</p></li>
+<li><p><strong>Scaling:</strong> There are three scaling modes that can be used: None, Height to Width, and Width to Height.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In None mode the printed image has the given dimensions. Since these dimensions may not match the aspect ratio of the image being viewed on the screen the printed image may look a little different.</p></li>
+<li><p>In Height to Width mode the program will set the height of the printed image to match the width and the current aspect ratio of the viewed image.</p></li>
+<li><p>In Width to Height mode the program will set the width of the printed image to match the height and the current aspect ratio of the viewed image.</p></li>
+</ul>
+<p>Note that these scaling options could easily set either the width or height to a value that is outside the printer’s printing area and hence clip the image. It is advisable to use printing preview or print the image to a PDF file before sending to a physical printer.</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="heading">
+<h2>Heading<a class="headerlink" href="#heading" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Include:</strong> Turn the header on and off.</p></li>
+<li><p><strong>Background Color:</strong> This is the color of the background in the header area.</p></li>
+<li><p><strong>Text Color:</strong> This is the color used for the text of the header.</p></li>
+<li><p><strong>Font:</strong> This is the font used for the header. Depending on the resize mode being used the font size may be altered.</p></li>
+<li><p><strong>Left Text:</strong> This is the text placed in the left third of the header.</p></li>
+<li><p><strong>Center Text:</strong> This is the text placed in the center third of the header.</p></li>
+<li><p><strong>Right Text:</strong> This is the text placed in the right third of the header.</p></li>
+</ul>
+</section>
+<section id="styles">
+<h2>Styles<a class="headerlink" href="#styles" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Background Color:</strong> This is the color of the background in the schedule item.</p></li>
+<li><p><strong>Text Color:</strong> This is the color used for the text of the schedule item.</p></li>
+<li><p><strong>Font:</strong> This is the font used for the schedule item. Depending on the resize mode being used the font size may be altered.</p></li>
+<li><p><strong>Justification:</strong> This is the horizontal text justification for the text inside the schedule item box. The options here are left, center, and right.</p></li>
+<li><p><strong>Alignment:</strong> This is the text vertical alignment for the text inside the schedule item box. The options here are top, middle, and bottom.</p></li>
+<li><p><strong>Spacing:</strong> This turns on and off the spacing between the lines of text. If this is turned on the lines will be equally spaced vertically inside the area, and if turned off the lines will be spaced at the font height of the text.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="costsch.html" title="Previous document">Constructing and Editing a Schedule</a>
+        </li>
+        <li>
+          <a href="fileops.html" title="Next document">File &amp; Exporting Options</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &#169;2025, Don Spickler.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/layoutops.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/mathprofdes/Schedule-Card-Creator" class="github">
+        <img src="_static/github-banner.svg" alt="Fork me on GitHub" class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

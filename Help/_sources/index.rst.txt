@@ -1,0 +1,28 @@
+.. Schedule Card Creator documentation master file, created by
+   sphinx-quickstart on Sat Jan 18 12:32:50 2025.
+
+Schedule Card Creator User's Guide
+==================================
+
+Introduction
+------------
+
+The Schedule Card Creator is an application that allows the user to create, save, and export a weekly schedule image that can be posted outside an office door or dropped into a web page or a CMS such as Canvas. The program interface has three main areas.
+
+* Layout Option window on the left.
+* Schedule Item listing in the lower right.
+* Schedule Card Image in the upper right.
+
+.. image:: ScheduleCardCreatorPython.png
+
+Both the options window and the schedule item listing are resizable and collapsible. Just drag the division between the windows to resize and drag to the edge of the application to collapse. The program offers several options for altering the schedule card layout and has 10 user-defined styles for rendering each schedule item. In addition there are facilities for saving and loading both the complete schedule and just the layout option information, copying and saving the schedule image, and printing the schedule image.
+
+
+.. toctree::
+   :hidden:
+
+   Introduction <self>
+   costsch
+   layoutops
+   fileops
+
